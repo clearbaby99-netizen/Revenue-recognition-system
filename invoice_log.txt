@@ -1,0 +1,190 @@
+==================================================
+INVOICE #1001
+Date: 2026-09-03
+Client: Zimplow Holdings
+Project: Office Website Redesign
+--------------------------------------------------
+Fixed-Price Contract
+Total Contract Value: $15,000.00
+Percent Complete: 60%
+Revenue Recognised: $9,000.00
+==================================================
+
+==================================================
+INVOICE #1002
+Date: 2026-09-03
+Client: Delta Corporation
+Project: ERP Support Retainer
+--------------------------------------------------
+Time-and-Materials Contract
+Hours Worked: 120
+Hourly Rate: $45.00
+Labour Charge: $5,400.00
+Materials Cost: $800.00
+Revenue Recognised: $6,200.00
+==================================================
+
+==================================================
+INVOICE #1003
+Date: 2026-09-03
+Client: Innscor Africa
+Project: Warehouse Automation System
+--------------------------------------------------
+Cost-Plus Contract
+Actual Cost Incurred: $32,000.00
+Fee: 12% ($3,840.00)
+Revenue Recognised: $35,840.00
+==================================================
+
+==================================================
+INVOICE #1001
+Date: 2026-09-03
+Client: Zimplow Holdings
+Project: Office Website Redesign
+--------------------------------------------------
+Fixed-Price Contract
+Total Contract Value: $15,000.00
+Percent Complete: 60%
+Revenue Recognised: $9,000.00
+==================================================
+
+==================================================
+INVOICE #1002
+Date: 2026-09-03
+Client: Delta Corporation
+Project: ERP Support Retainer
+--------------------------------------------------
+Time-and-Materials Contract
+Hours Worked: 120
+Hourly Rate: $45.00
+Labour Charge: $5,400.00
+Materials Cost: $800.00
+Revenue Recognised: $6,200.00
+==================================================
+
+==================================================
+INVOICE #1003
+Date: 2026-09-03
+Client: Innscor Africa
+Project: Warehouse Automation System
+--------------------------------------------------
+Cost-Plus Contract
+Actual Cost Incurred: $32,000.00
+Fee: 12% ($3,840.00)
+Revenue Recognised: $35,840.00
+==================================================
+
+==================================================
+INVOICE #1001
+Date: 2026-09-05
+Client: Zimplow Holdings
+Project: Office Website Redesign
+--------------------------------------------------
+Fixed-Price Contract
+Total Contract Value: $15,000.00
+Percent Complete: 60%
+Revenue Recognised: $9,000.00
+==================================================
+
+==================================================
+INVOICE #1002
+Date: 2026-09-05
+Client: Delta Corporation
+Project: ERP Support Retainer
+--------------------------------------------------
+Time-and-Materials Contract
+Hours Worked: 120
+Hourly Rate: $45.00
+Labour Charge: $5,400.00
+Materials Cost: $800.00
+Revenue Recognised: $6,200.00
+==================================================
+
+==================================================
+INVOICE #1003
+Date: 2026-09-05
+Client: Innscor Africa
+Project: Warehouse Automation System
+--------------------------------------------------
+Cost-Plus Contract
+Actual Cost Incurred: $32,000.00
+Fee: 12% ($3,840.00)
+Revenue Recognised: $35,840.00
+==================================================
+
+==================================================
+INVOICE #1001
+Date: 2026-09-05
+Client: Zimplow Holdings
+Project: Office Website Redesign
+--------------------------------------------------
+Fixed-Price Contract
+Total Contract Value: $15,000.00
+Percent Complete: 60%
+Revenue Recognised: $9,000.00
+==================================================
+
+==================================================
+INVOICE #1002
+Date: 2026-09-05
+Client: Delta Corporation
+Project: ERP Support Retainer
+--------------------------------------------------
+Time-and-Materials Contract
+Hours Worked: 120
+Hourly Rate: $45.00
+Labour Charge: $5,400.00
+Materials Cost: $800.00
+Revenue Recognised: $6,200.00
+==================================================
+
+==================================================
+INVOICE #1003
+Date: 2026-09-05
+Client: Innscor Africa
+Project: Warehouse Automation System
+--------------------------------------------------
+Cost-Plus Contract
+Actual Cost Incurred: $32,000.00
+Fee: 12% ($3,840.00)
+Revenue Recognised: $35,840.00
+==================================================
+
+==================================================
+INVOICE #1001
+Date: 2026-09-05
+Client: Clear99 Fintech
+Project: Office Website Redesign
+--------------------------------------------------
+Fixed-Price Contract
+Total Contract Value: $15,000.00
+Percent Complete: 60%
+Revenue Recognised: $9,000.00
+==================================================
+
+==================================================
+INVOICE #1002
+Date: 2026-09-05
+Client: Delta Corporation
+Project: ERP Support Retainer
+--------------------------------------------------
+Time-and-Materials Contract
+Hours Worked: 120
+Hourly Rate: $45.00
+Labour Charge: $5,400.00
+Materials Cost: $800.00
+Revenue Recognised: $6,200.00
+==================================================
+
+==================================================
+INVOICE #1003
+Date: 2026-09-05
+Client: Innscor Africa
+Project: Warehouse Automation System
+--------------------------------------------------
+Cost-Plus Contract
+Actual Cost Incurred: $32,000.00
+Fee: 12% ($3,840.00)
+Revenue Recognised: $35,840.00
+==================================================
+
