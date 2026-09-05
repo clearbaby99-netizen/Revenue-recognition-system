@@ -1,9 +1,3 @@
-"""
-Group 3 - Task 3: Jupyter Notebook Data Analysis Demo
-Each '# --- Cell N ---' marker below represents one Jupyter code cell.
-Data comes from the Task 2 Revenue Recognition project.
-"""
-
 import pandas as pd
 
 # --- Cell 1: Load the revenue data into a DataFrame ---
