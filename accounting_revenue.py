@@ -1,7 +1,16 @@
+import sys
+import time
 from datetime import date
 
-INVOICE_LOG = "invoice_log.txt"
-
+def show_progress(current, total, bar_length=30):
+    fraction = current / total
+    filled = int(bar_length * fraction)
+    bar = "#" * filled + "-" * (bar_length - filled)
+    percent = int(fraction * 100)
+    sys.stdout.write(f"\rGenerating invoices: [{bar}] {percent}%")
+    sys.stdout.flush()
+    if current == total:
+        print()
 
 class Contract:
     def __init__(self, project_name, client, contract_type):
@@ -71,7 +80,6 @@ class CostPlusContract(Contract):
 
 
 def generate_invoice(contract, invoice_number):
-    """Generate an invoice and append it to the invoice log file using the 'with' statement."""
     today = date.today().isoformat()
     invoice_text = (
         f"{'='*50}\n"
@@ -83,8 +91,9 @@ def generate_invoice(contract, invoice_number):
         f"{contract.invoice_details()}\n"
         f"{'='*50}\n\n"
     )
+    filename = contract.project_name.replace(" ", "_") + "_invoice.txt"
     try:
-        with open(INVOICE_LOG, "a") as file:
+        with open(filename, "a") as file:
             file.write(invoice_text)
     except IOError as e:
         print(f"Error writing invoice: {e}")
@@ -92,17 +101,16 @@ def generate_invoice(contract, invoice_number):
     return invoice_text
 
 
-def read_invoice_log():
-    """Read back all invoices from the log file, handling the case where it doesn't exist yet."""
+def read_invoice_log(project_name):
+    filename = project_name.replace(" ", "_") + "_invoice.txt"
     try:
-        with open(INVOICE_LOG, "r") as file:
+        with open(filename, "r") as file:
             return file.read()
     except FileNotFoundError:
-        return "No invoices have been generated yet."
+        return f"No invoice found for {project_name}."
 
 
 def total_revenue_by_type(contracts):
-    """Real-life question: total revenue recognised, broken down by contract type."""
     totals = {}
     for contract in contracts:
         totals[contract.contract_type] = totals.get(contract.contract_type, 0) + contract.calculate_revenue()
@@ -111,18 +119,31 @@ def total_revenue_by_type(contracts):
 
 if __name__ == "__main__":
     contracts = [
-        FixedPriceContract("Office Website Redesign", "Clear99 Fintech", 15000, 60),
-        TimeAndMaterialsContract("ERP Support Retainer", "Delta Corporation", 120, 45, 800),
+        FixedPriceContract("Office Website Redesign", "University of Zimbabwe", 15000, 60),
+        TimeAndMaterialsContract("ERP Support Retainer", "Delta corporation", 120, 45, 800),
         CostPlusContract("Warehouse Automation System", "Innscor Africa", 32000, 12),
     ]
 
-    for i, contract in enumerate(contracts, start=1):
-        invoice = generate_invoice(contract, invoice_number=1000 + i)
+    print("Starting Revenue Recognition System...\n")
+    invoices = [
+        generate_invoice(contract, invoice_number=1000 + i)
+        for i, contract in enumerate(contracts, start=1)
+    ]
+
+    steps = 50
+    for step in range(1, steps + 1):
+        show_progress(step, steps)
+        time.sleep(0.06)
+    print()
+
+    for invoice in invoices:
         print(invoice)
 
-    print("Reading back the full invoice log from file:\n")
-    print(read_invoice_log())
+    print("Reading back each project's invoice from its own file:\n")
+    for contract in contracts:
+        print(read_invoice_log(contract.project_name))
 
     print("Total revenue recognised by contract type:")
     for contract_type, total in total_revenue_by_type(contracts).items():
         print(f"  {contract_type}: ${total:,.2f}")
+        
